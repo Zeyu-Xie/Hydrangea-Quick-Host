@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"moduleResolution": "bundler",
+		"module": "ESNext",
+		"target": "ESNext",
+		"allowJs": false,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": false,
+		"strictNullChecks": true,
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"lib": ["ESNext", "DOM"],
+		"baseUrl": ".",
+		"rootDir": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@root/*": ["*"] 
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", ".turbo", "dist"]
+}
